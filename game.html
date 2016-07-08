@@ -10,17 +10,20 @@
 
 <h1>Guess a Number</h1>
 
-<div id="container">
+<p id="alert" class="hidden">Game Alerts</p>
 
-	<p id="alert"></p>
+<p>Type a number from 1&#8212;100</p>
+<input type="text" placeholder="number">
 
-	<p>Type a number from 1&#8212;100</p>
-	<input type="text" id="userNumber" placeholder="number">
+<div id='buttonContainer'>
 	<button id="makeGuess">Guess Number</button>
+	<button id="hint">Get a hint!</button>
 	<button id="reset">Play Again?</button>
-
-	<p id="tries"><span>5</span> Guesses Remaining</p>
 </div>
+
+<p id="guessMessage" class="hidden">Guess Message</p>
+<p id="tries"><span>5</span> Guesses Remaining</p>
+
 
 <script type="text/javascript" src="guessingGame.js"></script>
 </body>
