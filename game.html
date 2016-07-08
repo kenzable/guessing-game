@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Guess a Number</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="gameStyle.css">
 </head>
@@ -11,11 +12,16 @@
 
 <div id="container">
 
+	<p id="alert"></p>
+
 	<p>Type a number from 1&#8212;100</p>
 	<input type="text" id="userNumber" placeholder="number">
 	<button id="makeGuess">Guess Number</button>
 	<button id="reset">Play Again?</button>
+
+	<p id="tries"><span>5</span> Guesses Remaining</p>
 </div>
 
+<script type="text/javascript" src="guessingGame.js"></script>
 </body>
 </html>
